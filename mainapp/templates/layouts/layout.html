@@ -1,0 +1,650 @@
+html>
+<html lang="en">
+    <head>
+        ^{%load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SITIOS TURISTICOS</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico'%}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href= "{% static ' css/styles.css '%}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                 <!--<a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Restaurante</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Hoteleria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Sitios turisticos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Bienvenidos a salazar delas palmas!</div>
+                <div class="masthead-heading text-uppercase">la cuna del cafe de colombia</div>
+                 <!--<a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>-->
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">historia</h2>
+                    <h3 class="section-subheading text-muted">Salazar es llamada la Cuna del café en Colombia, ya que por esta región se introdujo el grano en el país.En este municipio existe la tradición de una aparición mariana atribuida a la Virgen de Belén,se dice que en el año 1671 una nativa indígena de nombre Catalina lavando su ropa en un arroyo se topó con un lienzo que flotaba en el aguas, lo tomó y lo colocó en una piedra para secarlo, al mirarlo apareció una imagen de María,este evento y otros posteriores fueron catalogados milagrosos, por tal razón, es un lugar de peregrinación religiosa y un sitio turístico del departamento.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-utensils fa-cutlery fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">comidas tipicas</h4>
+                        <p class="text-muted">Los platos típicos para saborear son la rapuchada (un guisado de pescado rapuche) y los cocteles de coco, los dulces de cafe.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-camera fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">sitios turísticos</h4>
+                        <p class="text-muted">Dentro de los atractivos turísticos se mencionan los más representativos: el lugar donde apareció la Virgen de Belén, El Templo Parroquial San Pablo, El Santuario Nuestra Señora de Belén, los Siete Chorros, y balnearios como El Pozo Juana Naranja y El Pomarroso.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-chart-bar fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">fuentes de ingreso</h4>
+                        <p class="text-muted">Desde el tiempo de la colonia Salazar de las Palmas ha sido un terreno dedicado a la agricultura, café, caña de azúcar, yuca y frijol son algunos de los productos que se cultivan en esta zona de Norte de Santander. Bañarse en el río Salazar, subir al cerro de belén y visitar sus templos son algunas de las tradiciones en este importante municipio; turismo y religiosidad en un solo lugar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">restaurantes</h2>
+                    <h3 class="section-subheading text-muted">Los mejores restaurantes son dela zona</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid-1" src="{% static 'assets/img/portfolio/llovisna.jpeg'%}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Estadero la llovisna</div>
+                                <div class="portfolio-caption-subheading text-muted">3222459180</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid-1" src="{% static 'assets/img/portfolio/palmas1.jpeg'%}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Restaurante las palmas</div>
+                                <div class="portfolio-caption-subheading text-muted">3164906621</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid-1" src="{% static 'assets/img/portfolio/micasita1.jpeg'%}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Restaurante mi casita</div>
+                                <div class="portfolio-caption-subheading text-muted">3132851409</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid-1" src="{% static 'assets/img/portfolio/juana2.jpeg'%}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Restaurante juana naranja</div>
+                                <div class="portfolio-caption-subheading text-muted">3212245936</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid-1" src="{% static 'assets/img/portfolio/emanuel.jpeg'%}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Restaurante emanuel express</div>
+                                <div class="portfolio-caption-subheading text-muted">3114773330</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid-1" src="{% static 'assets/img/portfolio/asadero.jpeg'%}" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Restaurante y asadero sofi</div>
+                                <div class="portfolio-caption-subheading text-muted">3115141220</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Hoteleria</h2>
+                    <h3 class="section-subheading text-muted">Mejores hoteles del sector</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle-1 img-fluid" src="{% static 'assets/img/about/comfa1.jpeg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>alojaminetos</h4>
+                                <h4 class="subheading">centro vacacional comfanorte</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Dirección : Vía al Llano
+
+                                Teléfono : 3102776345
+                                
+                                Cuenta con diferentes cabañas cada una con cocina, baño, servicio de tv y wifi.
+                                
+                                Piscina para adultos y niños
+                                8 cabañas con capacidad para 7 personas
+                                6 cabañas con capacidad para 6 personas
+                                1 cabaña con capacidad para 4 personas
+                                Kiosco para eventos
+                                Amplias zonas verdes
+                                Parqueadero
+                                Parque Infantil</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle-1 img-fluid" src="{% static 'assets/img/about/rio.jpeg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>alojaminetos</h4>
+                                <h4 class="subheading">hospedaje brisas del rio</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Dirección : Vía Arboledas Calle 2 No 4-09
+
+                                Teléfono : 311-2232427 5668270
+                                
+                                Cuenta con habitaciones confortables sencillas y de múltiple acomodación, ademas:
+                                
+                                Gimnasio
+                                Cafetería
+                                Servicio de Restaurante
+                                Museo de Antigüedades
+                                wifi y tv cable.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle-1 img-fluid" src="{% static 'assets/img/about/batenia.jpeg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>alojamiento</h4>
+                                <h4 class="subheading">hospedaje betania</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Cuenta con:
+
+                                Habitaciones sencillas
+                                Habitaciones de múltiple acomodación
+                                servicio de Wifi y Tv
+                                Dirección : Carrera 6 calle 3 Centro
+                                
+                                Teléfono : 320-4699361</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle-1 img-fluid" src="{% static 'assets/img/about/finca.jpeg'%}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>alojamiento</h4>
+                                <h4 class="subheading">finca lomitas</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Dirección : Corregimiento la Laguna
+
+                                Teléfono : 3133681253
+                                
+                                Cuenta con:
+                                
+                                Una amplia habitación con cuatro camas
+                                Piscina 
+                                Sonido y silletería
+                                Salón para Eventos
+                                Parrilla y Cocina de leña
+                                Parqueadero
+                                Zonas Verdes</p></div>
+                        </div>
+                    
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Sitios turisticos</h2>
+                    <h3 class="section-subheading text-muted">los mejores atractivos turisticos </h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/1.jpg'%}" alt="..." />
+                            <h4>Santuario la Belencita</h4>
+                            <p class="text-muted">Es el atractivo turístico que más popularidad le ha dado al municipio, al oír nombrar los Siete Chorros inmediatamente se viene a la mente Salazar de Las Palmas.</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/2.jpg'%}" alt="..." />
+                            <h4>Rio salazar</h4>
+                            <p class="text-muted">El Rio Salazar nace en el Páramo de Santurbán y tiene diferentes vertientes como la Quebrada El Molino, Quebrada La Amarilla, Quebrada de Triaca, Quebrada La Macanita, Quebrada Cordero, Quebrada El Zulia, Quebrada el Purgatorio, Quebrada Mal paso, Quebrada el Mandingas, entre otras de menor caudal.</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/3.jpg'%}" alt="..." />
+                            <h4>Templos</h4>
+                            <p class="text-muted">El Templo San Pablo fue abierto en 1910, cuenta con una altura de 60 metros y es de estilo gótico. Fue construido porque la Capilla no tenia la capacidad</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Dentro de los atractivos turísticos se mencionan los más representativos: el lugar donde apareció la Virgen de Belén, El Templo Parroquial San Pablo, El Santuario Nuestra Señora de Belén, los Siete Chorros, y balnearios como El Pozo Juana Naranja y El Pomarroso.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'assets/img/logos/microsoft.svg'%}" alt="..." aria-label="Microsoft Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'assets/img/logos/google.svg'%}" alt="..." aria-label="Google Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'assets/img/logos/facebook.svg'%}" alt="..." aria-label="Facebook Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'assets/img/logos/ibm.svg'%}" alt="..." aria-label="IBM Logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                             </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg'%}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">ESTADERO LA LLOVISNA</h2>
+                                    <p class="item-intro text-muted">Restaurante con comida tipicas</p>
+                                    <img class="img-fluid-1" src="{% static 'assets/img/portfolio/llovisnas.jpeg'%}" alt="..." />
+                                    <p>Dirección : Vía a los Siete Chorros, Sendero Peatonal La Belencita
+
+                                        A orillas del cristalino Rio Salazar se puede disfrutar del típico Sancocho de gallina Criolla, Mute Santandereano, Picadas, Pollo asado y toda clase de bebidas.
+                                        </p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Estadero la llovisna
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Restaurante
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Pagina principal
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg'%}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Restaurante las palmas</h2>
+                                    <p class="item-intro text-muted">almuerzos Ejecutivos</p>
+                                    <img class="img-fluid-1" src="{% static 'assets/img/portfolio/las palmas.jpeg'%}" alt="..." />
+                                    <p>Ambiente familiar, buen servicio y variedad en platos.
+
+                                        Dirección : Calle 3 # 6-48 Centro</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Restaurante las palmas
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Restaurante
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Pagina principal
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg'%}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Restaurante mi casita</h2>
+                                    <p class="item-intro text-muted">Ambiente Familiar. Almuerzos Ejecutivos, a la carta, pollo a la broaster y asado. Especialidad en Cachama y Sancocho de gallina Criolla.</p>
+                                    <img class="img-fluid-1" src="{% static 'assets/img/portfolio/micasita2.jpeg'%}" alt="..." />
+                                    <p>Ambiente familiar, buen servicio y variedad en platos.
+
+                                        Dirección : Calle 3 # 6-48 Centro</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Restaurante mi casita
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Restaurante
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        pagina principal
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg'%}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Restaurante juana naranja</h2>
+                                    <p class="item-intro text-muted">ambiente Familiar</p>
+                                    <img class="img-fluid-1" src="{% static 'assets/img/portfolio/juana2.jpeg'%}" alt="..." />
+                                    <p>Ambiente familiar, buen servicio y variedad en platos.
+
+                                        Dirección : Calle 2 # 8-48 Centro</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Restaurante juana naranja
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Restaurante
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Pagina principal
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg'%}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Restaurante emanuel express</h2>
+                                    <p class="item-intro text-muted">variedad de productos</p>
+                                    <img class="img-fluid-1" src="{% static 'assets/img/portfolio/emanuel2.jpg'%}" alt="..." />
+                                    <p>Variedad de platos, excelente servicio y calidad. Comida tipo buffet, a la carta, salón para celebraciones especiales.
+
+                                        Dirección : Calle 2 # 7-09 El Volante</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Restaurante emanuel express
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Restaurante
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Pagina principal
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{% static 'assets/img/close-icon.svg'%}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Restaurante y asadero sofi</h2>
+                                    <p class="item-intro text-muted">variedad de platos</p>
+                                    <img class="img-fluid-1" src="{% static 'assets/img/portfolio/asadero.jpeg'%}" alt="..." />
+                                    <p>Ambiente Familiar. Almuerzos Ejecutivos, a la carta, pollo a la broaster y asado. Especialidad en Cachama y Sancocho de gallina Criolla.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Restaurante y asadero sofi
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Restaurante
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Pagina principal
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js '%}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
